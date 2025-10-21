@@ -1,50 +1,66 @@
-.form-container {
-  background-color: #f8fafc;
-  border: 1px solid #dbeafe;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-.form-container h2 {
-  color: #1e3a8a;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-form {
+.login-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-form input {
+.login-form input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
   padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
+  color: #0664f2;
   font-size: 1rem;
   outline: none;
-  transition: border 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-form input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+.login-form input::placeholder {
+  color: #ffffff;
 }
 
-form button {
-  background-color: #2563eb;
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.login-form button {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  border: none;
   color: #fff;
   font-weight: 600;
   padding: 12px;
-  border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-form button:hover {
-  background-color: #1d4ed8;
-  transform: translateY(-1px);
+.login-form button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #1e40af, #1d4ed8);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.form-footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.register-text {
+  font-size: 0.9rem;
+  color: #0052b7;
+}
+
+.register-text a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+.app-title span {
+  color: #93c5fd;
 }

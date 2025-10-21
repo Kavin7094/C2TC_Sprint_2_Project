@@ -13,7 +13,6 @@ const UserList = ({ users, fetchUsers, setEditingUser }) => {
 
   return (
     <div className="user-list-container">
-      <h2>User Records</h2>
       {users.length === 0 ? (
         <p className="no-data">No users available.</p>
       ) : (
